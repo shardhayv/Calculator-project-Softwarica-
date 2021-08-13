@@ -1,11 +1,7 @@
-# Python program to create a simple GUI
-# calculator using Tkinter
+#softwarica project a simple calculator using tkinter
 
 # import everything from tkinter module
 from tkinter import *
-
-
-
 
 # globally declare the expression variable
 expression = ""
@@ -23,14 +19,13 @@ def press(num):
 	# update the expression by using set method
 	equation.set(expression)
 
-
 # Function to evaluate the final expression
 def equalpress():
 	# Try and except statement is used
 	# for handling the errors like zero
 	# division error etc.
 
-	# Put that code inside the try block
+	# Puts that code inside the try block
 	# which may generate the error
 	try:
 
@@ -96,49 +91,71 @@ if __name__ == "__main__":
 	# location inside the root window .
 	# when user press the button, the command or
 	# function affiliated to that button is executed .
+
+	# button for '1'
 	button1 = Button(gui, text=' 1 ', fg='light sky blue', bg='black',font=("retro",25,"bold"),bd=0,
 					command=lambda: press(1), height=1, width=3)
 	button1.grid(row=4, column=0)
-
+	# button for '2'
 	button2 = Button(gui, text=' 2 ', fg='light sky blue', bg='black',font=("clement",25,"bold"),bd=0,
 					command=lambda: press(2), height=1, width=3)
 	button2.grid(row=4, column=1)
+
+	# button for '3'
 
 	button3 = Button(gui, text=' 3 ', fg='light sky blue', bg='black',font=("clement",25,"bold"),bd=0,
 					command=lambda: press(3), height=1, width=3)
 	button3.grid(row=4, column=2)
 
+	# button for '4'
+
 	button4 = Button(gui, text=' 4 ', fg='light sky blue', bg='black',font=("clement",25,"bold"),bd=0,
 					command=lambda: press(4), height=1, width=3)
 	button4.grid(row=3, column=0)
+
+	# button for '5'
 
 	button5 = Button(gui, text=' 5 ', fg='light sky blue', bg='black',font=("clement",25,"bold"),bd=0,
 					command=lambda: press(5), height=1, width=3)
 	button5.grid(row=3, column=1)
 
+	# button for '6'
+
 	button6 = Button(gui, text=' 6 ', fg='light sky blue', bg='black',font=("clement",25,"bold"),bd=0,
 					command=lambda: press(6), height=1, width=3)
 	button6.grid(row=3, column=2)
+
+	# button for '7'
 
 	button7 = Button(gui, text=' 7 ', fg='light sky blue', bg='black',font=("clement",25,"bold"),bd=0,
 					command=lambda: press(7), height=1, width=3)
 	button7.grid(row=2, column=0)
 
+	# button for '8'
+
 	button8 = Button(gui, text=' 8 ', fg='light sky blue', bg='black',font=("clement",25,"bold"),bd=0,
 					command=lambda: press(8), height=1, width=3)
 	button8.grid(row=2, column=1)
+
+	# button for '9'
 
 	button9 = Button(gui, text=' 9 ', fg='light sky blue', bg='black',font=("clement",25,"bold"),bd=0,
 					command=lambda: press(9), height=1, width=3)
 	button9.grid(row=2, column=2)
 
+	# button for '0'
+
 	button0 = Button(gui, text=' 0 ', fg='light sky blue', bg='black',font=("clement",25,"bold"),bd=0,
 					command=lambda: press(0), height=1, width=5)
 	button0.place(x=152,y=255)
 
+	# button for 'plus'
+
 	plus = Button(gui, text=' + ', fg='darkgoldenrod1', bg='black',font=("clement",25,"bold"),bd=0,
 				command=lambda: press("+"), height=1, width=3)
 	plus.grid(row=2, column=3)
+
+	# button for 'minus'
 
 	minus = Button(gui, text=' - ', fg='darkgoldenrod1', bg='black',font=("clement",25,"bold"),bd=0,
 				command=lambda: press("-"), height=1, width=3)
